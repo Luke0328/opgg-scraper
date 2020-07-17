@@ -6,7 +6,10 @@
 import scrapy
 
 
-class OpggscrapeItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Champion(scrapy.Item):
+    champion_name = scrapy.Field()
+    cspm = scrapy.Field()
+    kda = scrapy.Field()
+    win_ratio = scrapy.Field()
+    games = scrapy.Field()
+    
