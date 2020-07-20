@@ -5,7 +5,7 @@ class OpggSpider(scrapy.Spider):
 	name = "opgg"
 
 	start_urls = [
-		'https://na.op.gg/summoner/userName=Epicluke0328'
+		'https://na.op.gg/summoner/userName=cherubiss'
 	]
 
 	def parse(self, response):
@@ -22,5 +22,14 @@ class OpggSpider(scrapy.Spider):
 
 			win_ratio = most_played.xpath(".//div[@title='Win Ratio']/text()").getall()[i].strip()
 
-			games_played = most_played.xpath(".//div[@class='Title']/text()").getall()[0].replace(" Played", "")
+			games_played = most_played.xpath(".//div[@class='Title']/text()").getall()[i].replace(" Played", "")
 
+			champion = Champion()
+
+			champion["champion_name"] = champion_name
+			champion["average_cspm"] = average_cspm
+			champion["kda"] = kda
+			champion["win_ratio"] = win_ratio
+			champion["games_played"] = games_played
+
+			yield champion

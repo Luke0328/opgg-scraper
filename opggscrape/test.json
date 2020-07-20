@@ -1,0 +1,9 @@
+[
+{"champion_name": "Kled", "average_cspm": "5.3", "kda": "3.34:1", "win_ratio": "61%", "games_played": "326"},
+{"champion_name": "Fiora", "average_cspm": "5.3", "kda": "2.05:1", "win_ratio": "50%", "games_played": "107"},
+{"champion_name": "Sett", "average_cspm": "4.9", "kda": "2.11:1", "win_ratio": "49%", "games_played": "63"},
+{"champion_name": "Aatrox", "average_cspm": "4.8", "kda": "1.96:1", "win_ratio": "47%", "games_played": "51"},
+{"champion_name": "Vladimir", "average_cspm": "5.6", "kda": "2.50:1", "win_ratio": "44%", "games_played": "41"},
+{"champion_name": "Darius", "average_cspm": "5.5", "kda": "1.72:1", "win_ratio": "46%", "games_played": "24"},
+{"champion_name": "Renekton", "average_cspm": "5.4", "kda": "1.44:1", "win_ratio": "38%", "games_played": "8"}
+]

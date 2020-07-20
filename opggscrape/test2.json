@@ -1,0 +1,9 @@
+[
+{"champion_name": "Syndra", "average_cspm": "6.4", "kda": "3.43:1", "win_ratio": "53%", "games_played": "95"},
+{"champion_name": "Xayah", "average_cspm": "5.8", "kda": "1.89:1", "win_ratio": "33%", "games_played": "30"},
+{"champion_name": "Akali", "average_cspm": "6.2", "kda": "2.63:1", "win_ratio": "56%", "games_played": "18"},
+{"champion_name": "Kayle", "average_cspm": "5.7", "kda": "1.59:1", "win_ratio": "30%", "games_played": "10"},
+{"champion_name": "Fiora", "average_cspm": "6.1", "kda": "2.12:1", "win_ratio": "43%", "games_played": "7"},
+{"champion_name": "Vayne", "average_cspm": "4.5", "kda": "1.03:1", "win_ratio": "40%", "games_played": "5"},
+{"champion_name": "Orianna", "average_cspm": "5.9", "kda": "2.41:1", "win_ratio": "40%", "games_played": "5"}
+]
