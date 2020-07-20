@@ -5,11 +5,10 @@
 
 import scrapy
 
-
 class Champion(scrapy.Item):
     champion_name = scrapy.Field()
-    cspm = scrapy.Field()
+    average_cspm = scrapy.Field()
     kda = scrapy.Field()
     win_ratio = scrapy.Field()
-    games = scrapy.Field()
+    games_played = scrapy.Field()
     

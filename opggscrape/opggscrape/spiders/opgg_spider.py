@@ -1,4 +1,5 @@
 import scrapy
+from ..items import Champion
 
 class OpggSpider(scrapy.Spider):
 	name = "opgg"
@@ -8,11 +9,18 @@ class OpggSpider(scrapy.Spider):
 	]
 
 	def parse(self, response):
-		# player = response.url.split('=')[-1]
-		# filename = 'player-%s.html' % player
-		# with open(filename, 'wb') as file:
-		# 	file.write(response.body)
+
 		most_played = response.xpath("//div[@class='MostChampionContent']")
-		for champion_box in most_played:
-			print(response.xpath("//div[@class='ChampionName']/a/text()").get().strip())
+		
+		for i in range(7):
+			champion_name = most_played.xpath(".//div[@class='ChampionName']/a/text()").getall()[i].strip()
+
+			average_cspm = most_played.xpath(
+				".//div[@class='ChampionMinionKill tip']/text()").getall()[i].strip().split()[2].replace("(", "").replace(")", "")
+
+			kda = most_played.xpath(".//span[@class='KDA']/text()").getall()[i]
+
+			win_ratio = most_played.xpath(".//div[@title='Win Ratio']/text()").getall()[i].strip()
+
+			games_played = most_played.xpath(".//div[@class='Title']/text()").getall()[0].replace(" Played", "")
 
